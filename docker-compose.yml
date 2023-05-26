@@ -1,7 +1,7 @@
 version: '3'
 services:
-  strapi:
-    container_name: strapi
+  bee-archive-strapi:
+    container_name: bee-archive-strapi
     build: .
     image: bee-archive:latest
     restart: unless-stopped
@@ -29,12 +29,12 @@ services:
     ports:
       - '1337:1337'
     networks:
-      - strapi
+      - bee-strapi
     depends_on:
-      - strapiDB
+      - bee-archive-strapiDB
 
-  strapiDB:
-    container_name: strapiDB
+  bee-archive-strapiDB:
+    container_name: bee-archive-strapiDB
     platform: linux/amd64 #for platform error on Apple M1 chips
     restart: unless-stopped
     env_file: .env
@@ -50,13 +50,13 @@ services:
     ports:
       - '5432:5432'
     networks:
-      - strapi
+      - bee-strapi
 
 volumes:
   bee-archive-strapi-data:
 
 
 networks:
-  strapi:
+  bee-strapi:
     name: Strapi
     driver: bridge
