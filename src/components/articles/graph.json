@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_articles_graphs",
+  "info": {
+    "displayName": "Graph",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "column",
+        "vector"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "json": {
+      "type": "json"
+    }
+  }
+}

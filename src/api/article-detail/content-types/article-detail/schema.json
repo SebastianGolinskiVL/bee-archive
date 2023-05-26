@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_details",
+  "info": {
+    "singularName": "article-detail",
+    "pluralName": "article-details",
+    "displayName": "Article Details",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "mappedBy": "article_details"
+    },
+    "article_content": {
+      "type": "dynamiczone",
+      "components": [
+        "articles.graph",
+        "articles.rich-text",
+        "articles.heading",
+        "articles.images-section"
+      ]
+    }
+  }
+}

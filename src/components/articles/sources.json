@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_articles_sources_section",
+  "info": {
+    "displayName": "Sources"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

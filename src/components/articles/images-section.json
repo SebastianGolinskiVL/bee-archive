@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_articles_images_sections",
+  "info": {
+    "displayName": "Images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Images": {
+      "displayName": "Image",
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.image"
+    }
+  }
+}
