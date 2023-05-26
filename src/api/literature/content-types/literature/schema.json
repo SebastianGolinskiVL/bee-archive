@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "literatures",
+  "info": {
+    "singularName": "literature",
+    "pluralName": "literatures",
+    "displayName": "Literature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

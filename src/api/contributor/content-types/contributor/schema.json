@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "contributors",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Articles",
+    "singularName": "contributor",
+    "pluralName": "contributors",
+    "displayName": "Contributor",
     "description": ""
   },
   "options": {
@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
-    "thumbnail": {
+    "avatar": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -26,17 +26,14 @@
         "audios"
       ]
     },
-    "article_details": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article-detail.article-detail",
-      "inversedBy": "article"
-    },
-    "subtitle": {
-      "type": "string"
-    },
     "description": {
-      "type": "text"
+      "type": "dynamiczone",
+      "components": [
+        "articles.rich-text",
+        "articles.graph",
+        "articles.images-section",
+        "articles.simple-heading"
+      ]
     }
   }
 }

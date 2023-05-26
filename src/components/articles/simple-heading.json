@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_articles_simple_heading_s",
+  "info": {
+    "displayName": "Simple Heading "
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
